@@ -4,36 +4,118 @@
 
 :root {
   --midnight: #0f1113;
+  --midnight-soft: #151719;
   --champagne: #cba968;
+  --champagne-soft: #e5d2a1;
   --ivory: #f7f4ee;
   --stone: #d8d5cf;
+  --graphite: #272a2d;
+
+  --font-heading: "Cormorant Garamond";
+  --font-body: "Inter";
+
+  --radius-luxury: 24px;
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--midnight);
+}
+
 body {
+  margin: 0;
   background: var(--midnight);
   color: var(--ivory);
-  margin: 0;
+  font-family: var(--font-body), Inter, Arial, sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
-.luxury-border { border-color: rgba(203,169,104,.35); }
-.gold { color: var(--champagne); }
-.section-pad { padding: 96px 6vw; }
+::selection {
+  background: rgba(203, 169, 104, 0.35);
+  color: var(--ivory);
+}
 
-.hero-bg {
-  background:
-    linear-gradient(90deg, rgba(15,17,19,.92) 0%, rgba(15,17,19,.64) 42%, rgba(15,17,19,.24) 100%),
-    url('/hero.svg');
-  background-size: cover;
-  background-position: center;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.luxury-heading {
+  font-family: var(--font-heading), Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.luxury-container {
+  width: min(100% - 48px, 1440px);
+  margin-inline: auto;
+}
+
+.luxury-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--champagne);
+}
+
+.luxury-glass {
+  background: rgba(15, 17, 19, 0.46);
+  border: 1px solid rgba(203, 169, 104, 0.22);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.luxury-border {
+  border-color: rgba(203, 169, 104, 0.35);
+}
+
+.gold {
+  color: var(--champagne);
+}
+
+.section-pad {
+  padding: 96px 6vw;
 }
 
 .card-glass {
-  background: rgba(247,244,238,.045);
-  border: 1px solid rgba(203,169,104,.22);
+  background: rgba(247, 244, 238, 0.045);
+  border: 1px solid rgba(203, 169, 104, 0.22);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--radius-luxury);
+}
+
+.fade-up {
+  animation: fadeUp 1.1s var(--ease-luxury) both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 @media (max-width: 768px) {
-  .section-pad { padding: 64px 24px; }
+  .luxury-container {
+    width: min(100% - 32px, 1440px);
+  }
+
+  .section-pad {
+    padding: 64px 24px;
+  }
 }
+
