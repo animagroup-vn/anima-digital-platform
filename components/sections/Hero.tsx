@@ -8,8 +8,8 @@ export default function Hero() {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-midnight/95 via-midnight/65 to-midnight/20" />
-      <div className="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-midnight/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-midnight/75 via-midnight/35 to-midnight/5" />
+      <div className="absolute inset-0 bg-gradient-to-t from-midnight/55 via-transparent to-midnight/10" />
 
       <div className="relative z-10 mx-auto flex min-h-[78vh] max-w-7xl items-center">
         <div className="max-w-3xl">
