@@ -34,7 +34,7 @@ export default function Hero() {
 
           <a
             href="#philosophy"
-            className="mt-10 inline-block border luxury-border px-6 py-4 text-xs uppercase tracking-[.2em] text-champagne"
+            className="luxury-button mt-10 inline-block border luxury-border px-6 py-4 text-xs uppercase tracking-[.2em] text-champagne"
           >
             Discover our philosophy →
           </a>
