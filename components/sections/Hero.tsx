@@ -4,15 +4,15 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden px-6 pt-36">
       <div
-        className="absolute inset-0 bg-cover bg-center brightness-110"
+        className="absolute inset-0 animate-[slowZoom_18s_ease-in-out_infinite_alternate] bg-cover bg-center brightness-110"
         style={{
           backgroundImage: "url('/hero.jpg.png')",
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/5" />
-      
+      <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/10 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5" />
+
       <div className="relative z-10 mx-auto flex min-h-[78vh] max-w-7xl items-center">
         <MotionReveal className="max-w-3xl">
           <div className="mb-6 h-px w-24 bg-champagne" />
@@ -39,7 +39,11 @@ export default function Hero() {
             Discover our philosophy →
           </a>
         </MotionReveal>
-        </div>
-     </section>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[.35em] text-stone/80">
+        Scroll
+      </div>
+    </section>
   );
 }
