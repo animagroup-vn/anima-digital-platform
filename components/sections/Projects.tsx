@@ -20,7 +20,7 @@ export default function Projects() {
           {projects.map((project) => (
             <article
               key={project}
-              className="card-glass p-8"
+              className="card-glass luxury-card p-8"
             >
               <div className="text-xs uppercase tracking-[.2em] text-champagne">
                 Project
