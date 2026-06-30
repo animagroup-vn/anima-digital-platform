@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "@/components/Logo";
 
 const nav = ["About", "Philosophy", "Ecosystem", "Projects", "Investors", "Journal", "Contact"];
 
