@@ -2,15 +2,15 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden px-6 pt-36">
       <div
-        className="absolute inset-0 scale-105 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/hero.jpg.png')",
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-midnight/75 via-midnight/35 to-midnight/5" />
-      <div className="absolute inset-0 bg-gradient-to-t from-midnight/55 via-transparent to-midnight/10" />
-
+      <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/5" />
+      
       <div className="relative z-10 mx-auto flex min-h-[78vh] max-w-7xl items-center">
         <div className="max-w-3xl">
           <div className="mb-6 h-px w-24 bg-champagne" />
