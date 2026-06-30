@@ -1,31 +1,20 @@
-"use client";
+import MotionReveal from "@/components/ui/MotionReveal";
 
-import { motion } from "framer-motion";
-
-type MotionSectionProps = {
-  children: React.ReactNode;
-  className?: string;
-  id?: string;
+type SectionTitleProps = {
+  eyebrow: string;
+  title: string;
 };
 
-export default function MotionSection({
-  children,
-  className = "",
-  id,
-}: MotionSectionProps) {
+export default function SectionTitle({ eyebrow, title }: SectionTitleProps) {
   return (
-    <motion.section
-      id={id}
-      initial={{ opacity: 0, y: 48 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.18 }}
-      transition={{
-        duration: 1,
-        ease: [0.22, 1, 0.36, 1],
-      }}
-      className={className}
-    >
-      {children}
-    </motion.section>
+    <MotionReveal className="mb-12">
+      <div className="mb-3 text-sm tracking-[.35em] text-champagne">
+        {eyebrow}
+      </div>
+
+      <h2 className="font-serif text-4xl leading-tight md:text-5xl">
+        {title}
+      </h2>
+    </MotionReveal>
   );
 }
