@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Logo from "@/components/ui/Logo";
+import Logo from "@/components/Logo";
 
 const nav = [
   "About",
