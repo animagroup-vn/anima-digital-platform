@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+}
   background: var(--midnight);
 }
 
@@ -118,4 +119,6 @@ a {
     padding: 64px 24px;
   }
 }
-
+section {
+  scroll-margin-top: 96px;
+}
