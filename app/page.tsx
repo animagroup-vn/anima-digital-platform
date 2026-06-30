@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import SectionTitle from "@/components/SectionTitle";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Philosophy from "@/components/sections/Philosophy";
 
 const essences = [
   ["A", "Awakening", "Khơi mở"],
@@ -23,47 +24,9 @@ export default function Home() {
 
       <About />
 
-      <section id="philosophy" className="section-pad">
-        <div className="mx-auto max-w-7xl">
-          <SectionTitle eyebrow="05" title="The Five Essences of ANIMA" />
-          <div className="grid gap-5 md:grid-cols-5">
-            {essences.map(([letter, title, vi]) => (
-              <div key={title} className="card-glass p-8 text-center">
-                <div className="font-serif text-5xl text-champagne">{letter}</div>
-                <div className="mt-5 text-sm uppercase tracking-[.2em]">{title}</div>
-                <div className="mt-2 text-sm italic text-stone">{vi}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Philosophy />
 
-      <section id="ecosystem" className="section-pad bg-ivory text-midnight">
-        <div className="mx-auto max-w-7xl">
-          <SectionTitle eyebrow="07" title="Our Business Ecosystem" />
-          <div className="grid gap-4 md:grid-cols-5">
-            {["Design & Studio", "Build", "Development", "Apartment", "Lifestyle"].map((item) => (
-              <div key={item} className="border border-midnight/15 p-8 text-center uppercase tracking-[.15em]">
-                ANIMA<br /><span className="text-sm text-midnight/60">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="section-pad">
-        <div className="mx-auto max-w-7xl">
-          <SectionTitle eyebrow="08" title="Places We Awakened" />
-          <div className="grid gap-5 md:grid-cols-4">
-            {projects.map((p) => (
-              <div key={p} className="card-glass min-h-72 p-6 flex flex-col justify-end">
-                <div className="text-sm uppercase tracking-[.18em] text-champagne">{p}</div>
-                <div className="mt-3 text-xs text-stone">View Project →</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Ecosystem />
 
       <section id="investors" className="section-pad bg-ivory text-midnight">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2">
