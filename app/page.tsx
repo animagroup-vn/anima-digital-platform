@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Philosophy from "@/components/sections/Philosophy";
 import Ecosystem from "@/components/sections/Ecosystem";
+import Projects from "@/components/sections/Projects";
 
 const essences = [
   ["A", "Awakening", "Khơi mở"],
@@ -28,6 +29,8 @@ export default function Home() {
       <Philosophy />
 
       <Ecosystem />
+
+      <Projects />
 
       <section id="investors" className="section-pad bg-ivory text-midnight">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2">
