@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import MotionReveal from "@/components/ui/MotionReveal";
 
 export default function Hero() {
@@ -32,12 +33,9 @@ export default function Hero() {
             others only build assets.
           </p>
 
-          <a
-            href="#philosophy"
-            className="luxury-button mt-10 inline-block border luxury-border px-6 py-4 text-xs uppercase tracking-[.2em] text-champagne"
-          >
+          <Button href="#philosophy">
             Discover our philosophy →
-          </a>
+          </Button>
         </MotionReveal>
       </div>
 
