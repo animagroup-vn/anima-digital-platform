@@ -22,7 +22,7 @@ export default function Ecosystem() {
           {ecosystem.map((item) => (
             <div
               key={item}
-              className="border border-midnight/15 p-8 text-center uppercase tracking-[.15em]"
+              className="luxury-card border border-midnight/15 p-8 text-center uppercase tracking-[.15em]"
             >
               ANIMA
               <br />
