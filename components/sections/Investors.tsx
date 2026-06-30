@@ -32,9 +32,7 @@ export default function Investors() {
           </p>
 
           <button
-            className="mt-8 border border-midnight/25
-                       px-6 py-4 text-sm uppercase
-                       tracking-[.18em]"
+            className="luxury-button mt-8 border border-midnight/25 px-6 py-4 text-sm uppercase tracking-[.18em]"
           >
             Coming Soon
           </button>
