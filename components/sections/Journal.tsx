@@ -21,7 +21,7 @@ export default function Journal() {
           {articles.map((article) => (
             <article
               key={article}
-              className="card-glass p-8"
+              className="card-glass luxury-card p-8"
             >
               <div className="text-xs uppercase tracking-[.2em] text-champagne">
                 Journal
