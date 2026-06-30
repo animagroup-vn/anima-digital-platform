@@ -1,8 +1,18 @@
 export default function Hero() {
   return (
-    <section className="hero-bg min-h-screen px-6 pt-36">
-      <div className="mx-auto max-w-7xl">
-        <div className="max-w-3xl pt-24">
+    <section className="relative min-h-screen overflow-hidden px-6 pt-36">
+      <div
+        className="absolute inset-0 bg-cover bg-center scale-105"
+        style={{
+          backgroundImage: "url('/media/hero.jpg')",
+        }}
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-r from-midnight/95 via-midnight/65 to-midnight/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-midnight/40" />
+
+      <div className="relative z-10 mx-auto flex min-h-[78vh] max-w-7xl items-center">
+        <div className="max-w-3xl">
           <div className="mb-6 h-px w-24 bg-champagne" />
 
           <h1 className="font-serif text-5xl leading-tight md:text-7xl">
@@ -15,7 +25,7 @@ export default function Hero() {
             Transforming spaces into value. Creating legacy through time.
           </p>
 
-          <p className="mt-8 max-w-2xl text-stone">
+          <p className="mt-8 max-w-2xl leading-8 text-stone">
             We awaken value where others only see space. We create legacy where
             others only build assets.
           </p>
