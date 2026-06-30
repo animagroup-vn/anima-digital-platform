@@ -1,3 +1,4 @@
+import Card from "@/components/ui/Card";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 const projects = [
@@ -18,24 +19,12 @@ export default function Projects() {
 
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
-            <article
+            <Card
               key={project}
-              className="card-glass luxury-card p-8"
-            >
-              <div className="text-xs uppercase tracking-[.2em] text-champagne">
-                Project
-              </div>
-
-              <h3 className="mt-4 font-serif text-3xl">
-                {project}
-              </h3>
-
-              <p className="mt-4 text-stone">
-                A curated destination where architecture,
-                hospitality and investment converge into
-                enduring value.
-              </p>
-            </article>
+              eyebrow="Project"
+              title={project}
+              description="A curated destination where architecture, hospitality and investment converge into enduring value."
+        />
           ))}
         </div>
       </div>
