@@ -1,3 +1,5 @@
+import MotionReveal from "@/components/ui/MotionReveal";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden px-6 pt-36">
@@ -12,7 +14,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/5" />
       
       <div className="relative z-10 mx-auto flex min-h-[78vh] max-w-7xl items-center">
-        <div className="max-w-3xl">
+        <MotionReveal className="max-w-3xl">
           <div className="mb-6 h-px w-24 bg-champagne" />
 
           <h1 className="font-serif text-5xl leading-tight md:text-7xl">
@@ -36,8 +38,8 @@ export default function Hero() {
           >
             Discover our philosophy →
           </a>
+        </MotionReveal>
         </div>
-      </div>
-    </section>
+     </section>
   );
 }
