@@ -3,6 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Philosophy from "@/components/sections/Philosophy";
+import Ecosystem from "@/components/sections/Ecosystem";
 
 const essences = [
   ["A", "Awakening", "Khơi mở"],
