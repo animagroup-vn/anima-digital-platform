@@ -7,6 +7,7 @@ import Ecosystem from "@/components/sections/Ecosystem";
 import Projects from "@/components/sections/Projects";
 import Investors from "@/components/sections/Investors";
 import Journal from "@/components/sections/Journal";
+import Footer from "@/components/sections/Footer";
 
 const essences = [
   ["A", "Awakening", "Khơi mở"],
