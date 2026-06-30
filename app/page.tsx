@@ -6,6 +6,7 @@ import Philosophy from "@/components/sections/Philosophy";
 import Ecosystem from "@/components/sections/Ecosystem";
 import Projects from "@/components/sections/Projects";
 import Investors from "@/components/sections/Investors";
+import Journal from "@/components/sections/Journal";
 
 const essences = [
   ["A", "Awakening", "Khơi mở"],
@@ -35,20 +36,7 @@ export default function Home() {
 
       <Investors />
 
-      <section id="journal" className="section-pad">
-        <div className="mx-auto max-w-7xl">
-          <SectionTitle eyebrow="09" title="Latest Journal" />
-          <div className="grid gap-5 md:grid-cols-3">
-            {["The Future of Asset Development", "Building Communities That Last", "Designing Value Beyond Space"].map((j) => (
-              <article key={j} className="card-glass p-8">
-                <div className="text-xs uppercase tracking-[.2em] text-champagne">Journal</div>
-                <h3 className="mt-5 font-serif text-2xl">{j}</h3>
-                <p className="mt-5 text-stone">Read article →</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Journal />
 
       <footer id="contact" className="border-t luxury-border px-6 py-12">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-4">
