@@ -1,8 +1,9 @@
 import SectionTitle from "@/components/SectionTitle";
+import MotionSection from "@/components/ui/MotionSection";
 
 export default function About() {
   return (
-    <section id="about" className="section-pad bg-ivory text-midnight">
+    <MotionSection id="about" className="section-pad bg-ivory text-midnight">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2">
         <div>
           <SectionTitle eyebrow="02" title="A Letter From The Founder" />
@@ -25,6 +26,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 }
