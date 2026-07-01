@@ -31,7 +31,7 @@ export default function Header() {
         <nav className="hidden items-center gap-8 text-[11px] uppercase tracking-[.18em] text-stone lg:flex">
           {NAVIGATION.map((item) => (
             <a
-              key={item}
+              key={item.id}
               href={`#${item.id}`}
               className="transition hover:text-champagne"
             >
