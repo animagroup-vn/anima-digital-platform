@@ -33,46 +33,35 @@ export default function Hero() {
           <div className="mb-6 h-px w-24 bg-champagne" />
 
           <h1 className="font-serif text-5xl leading-tight md:text-7xl">
-            <>
-              {HERO.title.en}
+            {HERO.title.en}
 
-              <div className="mt-5 text-[18px] font-light tracking-[0.03em] text-stone-300/60">
-            {HERO.title.vi}
-          </div>
+            <div className="mt-5 text-[18px] font-light tracking-[0.03em] text-stone-300/60">
               {HERO.title.vi}
-              </div>
-            </>
+            </div>
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg uppercase tracking-[.18em] text-champagne">
-            <>
+          <div className="mt-8 max-w-xl text-lg uppercase tracking-[.18em] text-champagne">
             {HERO.subtitle.en}
 
             <div className="mt-3 text-[12px] font-light tracking-[0.08em] uppercase text-champagne/55">
-            {HERO.subtitle.vi}
+              {HERO.subtitle.vi}
+            </div>
           </div>
-          </>
-          </p>
 
-          <p className="mt-8 max-w-2xl leading-8 text-stone">
-            <>
+          <div className="mt-8 max-w-2xl leading-8 text-stone">
             <p>{HERO.description.en}</p>
 
             <p className="mt-3 text-[13px] font-light leading-7 text-stone-300/55">
-            {HERO.description.vi}
-          </p>
-          </>
-          </p>
+              {HERO.description.vi}
+            </p>
+          </div>
 
           <div className="mt-10">
             <Button href="#philosophy" variant="outline">
-              <>
-            {HERO.button.en}
-
-            <span className="mt-1 block text-[10px] font-light tracking-[0.05em] text-stone-400/60">
-              {HERO.button.vi}
-          </span>
-          </> →
+              {HERO.button.en}
+              <span className="mt-1 block text-[10px] font-light tracking-[0.05em] text-stone-400/60">
+                {HERO.button.vi}
+              </span>
             </Button>
           </div>
         </MotionReveal>
