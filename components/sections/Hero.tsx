@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/ui/Button";
 import MotionReveal from "@/components/ui/MotionReveal";
 import { motion } from "framer-motion";
