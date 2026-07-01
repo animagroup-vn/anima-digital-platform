@@ -8,6 +8,7 @@ import Projects from "@/components/sections/Projects";
 import Investors from "@/components/sections/Investors";
 import Journal from "@/components/sections/Journal";
 import Footer from "@/components/sections/Footer";
+import WhoWeAre from "@/components/sections/WhoWeAre";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <Header />
 
       <Hero />
+
+      <WhoWeAre />
 
       <About />
 
