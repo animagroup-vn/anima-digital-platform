@@ -1,15 +1,28 @@
 import Button from "@/components/ui/Button";
 import MotionReveal from "@/components/ui/MotionReveal";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden px-6 pt-36">
-      <video
+      <motion.video
         className="absolute inset-0 h-full w-full object-cover"
         autoPlay
         muted
         loop
         playsInline
+        initial={{
+          scale: 1.12,
+        }}
+
+          animate={{
+          scale: 1,
+        }}
+
+        transition={{
+          duration: 8,
+          ease: [0.16, 1, 0.3, 1],
+        }}
         poster="/hero.jpg.png"
       >
   <source src="/video/hero.mp4" type="video/mp4" />
