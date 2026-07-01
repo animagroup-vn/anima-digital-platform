@@ -36,7 +36,9 @@ export default function Hero() {
             <>
               {HERO.title.en}
 
-              <div className="mt-3 text-lg font-light tracking-[0.08em] text-stone-300">
+              <div className="mt-5 text-[18px] font-light tracking-[0.03em] text-stone-300/60">
+            {HERO.title.vi}
+          </div>
               {HERO.title.vi}
               </div>
             </>
@@ -46,9 +48,9 @@ export default function Hero() {
             <>
             {HERO.subtitle.en}
 
-            <div className="mt-2 text-sm text-stone-400">
-              {HERO.subtitle.vi}
-            </div>
+            <div className="mt-3 text-[12px] font-light tracking-[0.08em] uppercase text-champagne/55">
+            {HERO.subtitle.vi}
+          </div>
           </>
           </p>
 
@@ -56,9 +58,9 @@ export default function Hero() {
             <>
             <p>{HERO.description.en}</p>
 
-            <p className="mt-2 text-sm text-stone-400">
-              {HERO.description.vi}
-            </p>
+            <p className="mt-3 text-[13px] font-light leading-7 text-stone-300/55">
+            {HERO.description.vi}
+          </p>
           </>
           </p>
 
@@ -67,9 +69,9 @@ export default function Hero() {
               <>
             {HERO.button.en}
 
-            <span className="block text-[10px] font-normal tracking-normal text-stone-400">
+            <span className="mt-1 block text-[10px] font-light tracking-[0.05em] text-stone-400/60">
               {HERO.button.vi}
-            </span>
+          </span>
           </> →
             </Button>
           </div>
