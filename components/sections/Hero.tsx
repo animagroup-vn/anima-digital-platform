@@ -1,5 +1,6 @@
 "use client";
 
+import { HERO } from "@/lib/content/hero";
 import Button from "@/components/ui/Button";
 import MotionReveal from "@/components/ui/MotionReveal";
 import { motion } from "framer-motion";
@@ -32,23 +33,44 @@ export default function Hero() {
           <div className="mb-6 h-px w-24 bg-champagne" />
 
           <h1 className="font-serif text-5xl leading-tight md:text-7xl">
-            THE SOUL OF
-            <br />
-            ASSET DEVELOPMENT
+            <>
+              {HERO.title.en}
+
+              <div className="mt-3 text-lg font-light tracking-[0.08em] text-stone-300">
+              {HERO.title.vi}
+              </div>
+            </>
           </h1>
 
           <p className="mt-8 max-w-xl text-lg uppercase tracking-[.18em] text-champagne">
-            Transforming spaces into value. Creating legacy through time.
+            <>
+            {HERO.subtitle.en}
+
+            <div className="mt-2 text-sm text-stone-400">
+              {HERO.subtitle.vi}
+            </div>
+          </>
           </p>
 
           <p className="mt-8 max-w-2xl leading-8 text-stone">
-            We awaken value where others only see space. We create legacy where
-            others only build assets.
+            <>
+            <p>{HERO.description.en}</p>
+
+            <p className="mt-2 text-sm text-stone-400">
+              {HERO.description.vi}
+            </p>
+          </>
           </p>
 
           <div className="mt-10">
             <Button href="#philosophy" variant="outline">
-              Discover our philosophy →
+              <>
+            {HERO.button.en}
+
+            <span className="block text-[10px] font-normal tracking-normal text-stone-400">
+              {HERO.button.vi}
+            </span>
+          </> →
             </Button>
           </div>
         </MotionReveal>
