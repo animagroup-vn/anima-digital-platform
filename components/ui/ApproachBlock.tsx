@@ -46,13 +46,15 @@ export default function ApproachBlock({
         </div>
       </MotionReveal>
 
-      <MotionReveal delay={0.15}>
-        <img
-          src={image}
-          alt={title}
-          className="aspect-[4/5] w-full object-cover"
-        />
-      </MotionReveal>
+      {image && (
+  <MotionReveal delay={0.15}>
+    <img
+      src={image}
+      alt={title}
+      className="aspect-[4/5] w-full object-cover"
+    />
+  </MotionReveal>
+)}
     </div>
   );
 }
