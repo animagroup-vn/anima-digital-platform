@@ -11,22 +11,17 @@ export default function Hero() {
         muted
         loop
         playsInline
-        initial={{
-          scale: 1.12,
-        }}
-
-          animate={{
-          scale: 1,
-        }}
-
+        poster="/hero.jpg.png"
+        initial={{ scale: 1.12 }}
+        animate={{ scale: 1 }}
         transition={{
           duration: 8,
           ease: [0.16, 1, 0.3, 1],
         }}
-        poster="/hero.jpg.png"
       >
-  <source src="/video/hero.mp4" type="video/mp4" />
-</video>
+        <source src="/video/hero.mp4" type="video/mp4" />
+      </motion.video>
+
       <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/10 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5" />
 
@@ -49,9 +44,11 @@ export default function Hero() {
             others only build assets.
           </p>
 
-          <Button href="#philosophy">
-            Discover our philosophy →
-          </Button>
+          <div className="mt-10">
+            <Button href="#philosophy" variant="outline">
+              Discover our philosophy →
+            </Button>
+          </div>
         </MotionReveal>
       </div>
 
