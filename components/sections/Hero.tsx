@@ -4,13 +4,16 @@ import MotionReveal from "@/components/ui/MotionReveal";
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden px-6 pt-36">
-      <div
-        className="absolute inset-0 animate-[slowZoom_18s_ease-in-out_infinite_alternate] bg-cover bg-center brightness-110"
-        style={{
-          backgroundImage: "url('/hero.jpg.png')",
-        }}
-      />
-
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/images/hero.jpg"
+      >
+  <source src="/videos/hero.mp4" type="video/mp4" />
+</video>
       <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/10 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5" />
 
