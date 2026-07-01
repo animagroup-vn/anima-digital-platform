@@ -10,9 +10,9 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster="/images/hero.jpg"
+        poster="/hero.jpg.png"
       >
-  <source src="/videos/hero.mp4" type="video/mp4" />
+  <source src="/video/hero.mp4" type="video/mp4" />
 </video>
       <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/10 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5" />
