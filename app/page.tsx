@@ -9,6 +9,7 @@ import Investors from "@/components/sections/Investors";
 import Journal from "@/components/sections/Journal";
 import Footer from "@/components/sections/Footer";
 import WhoWeAre from "@/components/sections/WhoWeAre";
+import OurApproach from "@/components/sections/OurApproach";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <Hero />
 
       <WhoWeAre />
+
+      <OurApproach />
 
       <About />
 
@@ -31,7 +34,7 @@ export default function Home() {
 
       <Journal />
 
-     <Footer />
+      <Footer />
     </main>
   );
 }
