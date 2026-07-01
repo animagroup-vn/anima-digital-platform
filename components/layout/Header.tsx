@@ -1,17 +1,7 @@
 "use client";
-
+import { NAVIGATION } from "@/lib/navigation";
 import { useEffect, useState } from "react";
 import Logo from "@/components/Logo";
-
-const nav = [
-  "About",
-  "Philosophy",
-  "Ecosystem",
-  "Projects",
-  "Investors",
-  "Journal",
-  "Contact",
-];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,13 +29,18 @@ export default function Header() {
         <Logo />
 
         <nav className="hidden items-center gap-8 text-[11px] uppercase tracking-[.18em] text-stone lg:flex">
-          {nav.map((item) => (
+          {NAVIGATION.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item.id}`}
               className="transition hover:text-champagne"
             >
-              {item}
+              <>
+            <div>{item.label}</div>
+            <div className="text-[9px] normal-case tracking-normal text-stone-400">
+              {item.vi}
+            </div>
+          </>
             </a>
           ))}
         </nav>
