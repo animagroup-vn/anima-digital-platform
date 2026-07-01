@@ -30,41 +30,54 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-[78vh] max-w-7xl items-center">
         <MotionReveal className="max-w-3xl">
-          <div className="mb-6 h-px w-24 bg-champagne" />
+  <div className="mb-6 h-px w-24 bg-champagne" />
 
-          <h1 className="font-serif text-5xl leading-tight md:text-7xl">
-            {HERO.title.en}
+  {/* ================= TITLE ================= */}
+  <h1 className="font-serif text-5xl leading-tight md:text-7xl text-ivory">
+    <>
+      {HERO.title.en}
 
-            <div className="mt-5 text-[18px] font-light tracking-[0.03em] text-stone-300/60">
-              {HERO.title.vi}
-            </div>
-          </h1>
+      <div className="mt-2 text-[16px] md:text-[18px] font-light tracking-[0.015em] text-stone-300/55">
+        {HERO.title.vi}
+      </div>
+    </>
+  </h1>
 
-          <div className="mt-8 max-w-xl text-lg uppercase tracking-[.18em] text-champagne">
-            {HERO.subtitle.en}
+  {/* ================= SUBTITLE ================= */}
+  <div className="mt-8 max-w-xl uppercase tracking-[.18em] text-champagne text-lg">
+    <>
+      {HERO.subtitle.en}
 
-            <div className="mt-3 text-[12px] font-light tracking-[0.08em] uppercase text-champagne/55">
-              {HERO.subtitle.vi}
-            </div>
-          </div>
+      <div className="mt-1 text-[10px] md:text-[11px] font-light uppercase tracking-[0.08em] text-champagne/45">
+        {HERO.subtitle.vi}
+      </div>
+    </>
+  </div>
 
-          <div className="mt-8 max-w-2xl leading-8 text-stone">
-            <p>{HERO.description.en}</p>
+  {/* ================= DESCRIPTION ================= */}
+  <div className="mt-8 max-w-2xl text-stone leading-8">
+    <>
+      <p>{HERO.description.en}</p>
 
-            <p className="mt-3 text-[13px] font-light leading-7 text-stone-300/55">
-              {HERO.description.vi}
-            </p>
-          </div>
+      <p className="mt-1 text-[12px] md:text-[13px] leading-7 font-light text-stone-300/50">
+        {HERO.description.vi}
+      </p>
+    </>
+  </div>
 
-          <div className="mt-10">
-            <Button href="#philosophy" variant="outline">
-              {HERO.button.en}
-              <span className="mt-1 block text-[10px] font-light tracking-[0.05em] text-stone-400/60">
-                {HERO.button.vi}
-              </span>
-            </Button>
-          </div>
-        </MotionReveal>
+  {/* ================= BUTTON ================= */}
+  <div className="mt-10">
+    <Button href="#philosophy" variant="outline">
+      <>
+        {HERO.button.en}
+
+        <span className="mt-0.5 block text-[9px] md:text-[10px] font-light tracking-[0.04em] text-stone-400/55">
+          {HERO.button.vi}
+        </span>
+      </>
+    </Button>
+  </div>
+</MotionReveal>
       </div>
 
       <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[.35em] text-stone/80">
